@@ -10,6 +10,7 @@ import ConfirmPassword from "./components/auth/ConfirmPassword";
 import NotFound from "./components/NotFound";
 import { useAuth } from "./hooks";
 import AdminNavigator from "./navigator/AdminNavigator";
+import MovieReview from './components/movie/MovieReview';
 
 export default function App() {
   const { authInfo } = useAuth();
@@ -27,6 +28,9 @@ export default function App() {
         <Route path="/auth/verification" element={<EmailVerification />} />
         <Route path="/auth/forget-password" element={<ForgetPassword />} />
         <Route path="/auth/reset-password" element={<ConfirmPassword />} />
+        <Route path="/auth/reset-password" element={<ConfirmPassword />} />
+        <Route path="/auth/reset-password" element={<ConfirmPassword />} />
+        <Route path="/movie/movie-review" element={<MovieReview />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

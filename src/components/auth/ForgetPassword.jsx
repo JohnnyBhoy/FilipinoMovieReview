@@ -27,7 +27,7 @@ export default function ForgetPassword() {
     const { error, message } = await forgetPassword(email);
     if (error) return updateNotification("error", error);
 
-    updateNotification("error", message);
+    updateNotification("success", message);
   };
 
   return (
