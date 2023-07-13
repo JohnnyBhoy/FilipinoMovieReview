@@ -22,7 +22,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="w-48 min-h-screen bg-secondary border-r border-gray-300">
+    <nav className="w-56 min-h-screen bg-secondary border-r border-gray-300">
       <div className="flex flex-col justify-between pl-5 h-screen sticky top-0">
         <ul>
           <li className="mb-8">
